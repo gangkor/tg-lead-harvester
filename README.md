@@ -43,17 +43,17 @@ The parsed spreadsheet will be automatically exported to your output folder as `
 
 ---
 
-### 💳 Instant Purchase & Commercial License ($19.00 USD)
+### 💳 Instant Purchase & Commercial License ($19.99 USD)
 
-Get the complete commercial package, priority feature requests, and dedicated support for **$19 USD**.
+Get the complete commercial package, unlimited extraction capability, and dedicated support for **$19.99 USD**.
 
 #### ⚡ Direct Web3 Payment (Solana / Phantom / USDC):
-- **Accepted Assets:** **SOL**, **USDC**, or **USDT** (Solana Network)
+- **Accepted Assets:** **USDC**, **USDT**, or **SOL** (Solana Network)
 - **Official Payout Wallet:**
   ```text
   3EZnNP2kfmY161XyqnRWEFgtYw6jWFXHnimU5RMqA8g8
   ```
-- After sending, send transaction signature / proof via **X Direct Message [@Dankokor1455](https://x.com/Dankokor1455)** or open a **GitHub Issue** — automatic instant delivery!
+- **Delivery:** After transfer, send transaction hash / screenshot to **X Direct Message [@Dankokor1455](https://x.com/Dankokor1455)** or open a **GitHub Issue** for immediate automated delivery.
 
 ---
 *Created and maintained by [gangkor](https://github.com/gangkor)*
