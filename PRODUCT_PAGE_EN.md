@@ -35,4 +35,4 @@ Most Telegram scrapers require you to log in with your personal Telegram account
 - Sample datasets and documentation
 - Lifetime free updates
 
-**Price:** $19.00 (One-time payment, unlimited lifetime usage)
+**Price:** $19.99 (One-time payment, unlimited lifetime usage)
