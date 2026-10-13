@@ -1,26 +1,52 @@
-# 🚀 TG-Lead Harvester Pro (Автономний Парсер Клієнтів та Контактів)
+# 🚀 TG-Lead Harvester Pro
 
-Потужний інструмент для арбітражників, маркетологів та підприємців.
-Витягує цільові контакти (Usernames, Emails, Номери телефонів, Посилання) з будь-яких відкритих Telegram каналів та груп **БЕЗ потреби підключати свій акаунт чи ризикувати баном**.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Zero-Ban](https://img.shields.io/badge/Account_Risk-0%25_Ban_Free-brightgreen.svg)]()
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-orange.svg)]()
 
----
+High-speed, lightweight Telegram audience and lead generation tool for growth hackers, B2B marketers, and affiliate teams.
 
-### 🔥 Переваги продукту:
-1. **Без ризику блокування (0 Ban Risk)**: Не вимагає номеру телефону чи авторизації через Telegram API. Парсинг через захищені веб-дзеркала.
-2. **Фільтрація контактів**: Автоматично розпізнає та відокремлює:
-   - `@usernames` адміністраторів, авторів та менеджерів
-   - `emails` для холодних B2B розсилок
-   - `телефони` (+380...)
-3. **Експорт в 1 клік**: Миттєво вивантажує готову базу в **Excel / CSV** прямо в пам'ять телефону чи ПК.
-4. **Працює будь-де**: На телефоні (Termux / Android), Linux або Windows без складних налаштувань.
+Extract targeted business contacts (`@usernames`, `Emails`, `Phone numbers`, `Engagement stats`) from public Telegram channels directly into clean **CSV / Excel spreadsheets** — **WITHOUT linking your Telegram account or risking phone bans**.
 
 ---
 
-### 📦 Як запустити:
+### 🔥 Core Features & Advantages
+
+- 🛡️ **100% Ban-Proof (Zero Account Risk):** No personal Telegram session, phone number, API ID, or hash required. Operates purely through clean, public web mirror inspection.
+- ⚡ **Lightning Fast:** Extracts complete post feeds and filters contact metadata in under 2 seconds.
+- 🎯 **Automated Contact Classification:**
+  - `@usernames` (channel owners, administrators, mentioned KOLs)
+  - `Emails` (direct B2B reachouts, customer support)
+  - `Phone numbers` (localized & international formats)
+  - `Post metrics` (views count, publication timestamps)
+- 📊 **One-Click CSV Export:** Generates formatted UTF-8 CSV tables ready for instant import into HubSpot, Lemlist, Google Sheets, or Excel.
+- 🪶 **Zero Heavy Dependencies:** Built strictly using Python standard libraries (`urllib`, `re`, `csv`). Runs natively on Windows, macOS, Linux, and Android Termux out of the box.
+
+---
+
+### 💻 Quick Installation & Usage
+
+#### 1. Clone the repository:
 ```bash
-python3 harvester.py @назва_каналу
+git clone https://github.com/gangkor/tg-lead-harvester.git
+cd tg-lead-harvester
 ```
-Готовий файл `TG_Leads_*.csv` збережеться автоматично у ваші Завантаження!
+
+#### 2. Run the extractor:
+```bash
+python harvester.py @target_channel
+```
+*(Example: `python harvester.py durov`)*
+
+The parsed spreadsheet will be automatically exported to your output folder as `TG_Leads_<channel>_<timestamp>.csv`.
 
 ---
-💡 *Авторська розробка під ключ. Підтримка та індивідуальні доопрацювання.*
+
+### 💼 Commercial Licensing & Custom Automation
+- **Base Tool:** Open-source & available for community usage.
+- **Enterprise / Tailored Multi-Channel Automation:** Starting at **$19.00 USD**.
+- For feature requests, high-volume multi-threading, or custom scrapers: contact via GitHub Issues or X [@Dankokor1455](https://x.com/Dankokor1455).
+
+---
+*Created by [gangkor](https://github.com/gangkor)*
