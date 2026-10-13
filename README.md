@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Zero-Ban](https://img.shields.io/badge/Account_Risk-0%25_Ban_Free-brightgreen.svg)]()
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android-orange.svg)]()
+[![Solana Pay](https://img.shields.io/badge/Payment-Solana_%2F_Phantom_USDC-9945FF.svg)]()
 
 High-speed, lightweight Telegram audience and lead generation tool for growth hackers, B2B marketers, and affiliate teams.
 
@@ -43,10 +43,17 @@ The parsed spreadsheet will be automatically exported to your output folder as `
 
 ---
 
-### 💼 Commercial Licensing & Custom Automation
-- **Base Tool:** Open-source & available for community usage.
-- **Enterprise / Tailored Multi-Channel Automation:** Starting at **$19.00 USD**.
-- For feature requests, high-volume multi-threading, or custom scrapers: contact via GitHub Issues or X [@Dankokor1455](https://x.com/Dankokor1455).
+### 💳 Instant Purchase & Commercial License ($19.00 USD)
+
+Get the complete commercial package, priority feature requests, and dedicated support for **$19 USD**.
+
+#### ⚡ Direct Web3 Payment (Solana / Phantom / USDC):
+- **Accepted Assets:** **SOL**, **USDC**, or **USDT** (Solana Network)
+- **Official Payout Wallet:**
+  ```text
+  3EZnNP2kfmY161XyqnRWEFgtYw6jWFXHnimU5RMqA8g8
+  ```
+- After sending, send transaction signature / proof via **X Direct Message [@Dankokor1455](https://x.com/Dankokor1455)** or open a **GitHub Issue** — automatic instant delivery!
 
 ---
-*Created by [gangkor](https://github.com/gangkor)*
+*Created and maintained by [gangkor](https://github.com/gangkor)*
