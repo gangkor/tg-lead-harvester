@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TG-Lead Harvester Pro | Turn Telegram Into Your #1 B2B Pipeline</title>
+  <style>
+    :root {
+      --bg: #090a0f;
+      --card-bg: #12151f;
+      --border: #222938;
+      --accent: #9945ff;
+      --accent-alt: #14f195;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .badge { display: inline-block; background: rgba(153, 69, 255, 0.15); color: var(--accent-alt); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
+    h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; background: linear-gradient(135deg, #fff 0%, var(--accent-alt) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p.lead { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 30px; }
+    .terminal { background: #000; border: 1px solid var(--border); border-radius: 12px; padding: 20px; font-family: "Courier New", Courier, monospace; font-size: 14px; color: #14f195; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 40px; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+    .card.featured { border-color: var(--accent); box-shadow: 0 0 25px rgba(153, 69, 255, 0.2); }
+    .card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+    .price { font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; color: #fff; }
+    .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+    ul.features { list-style: none; margin-bottom: 25px; }
+    ul.features li { margin-bottom: 12px; color: var(--text-muted); display: flex; align-items: center; }
+    ul.features li::before { content: "✓"; color: var(--accent-alt); font-weight: bold; margin-right: 10px; }
+    .btn { display: block; text-align: center; background: linear-gradient(135deg, var(--accent) 0%, #7928ca 100%); color: #fff; text-decoration: none; padding: 14px; border-radius: 10px; font-weight: 700; cursor: pointer; border: none; transition: 0.2s; }
+    .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+    .wallet-box { background: #12151f; border: 1px dashed var(--accent); border-radius: 12px; padding: 20px; text-align: center; margin-top: 30px; }
+    .wallet-address { font-family: monospace; background: #000; padding: 10px; border-radius: 6px; word-break: break-all; margin: 10px 0; color: var(--accent-alt); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">🔥 v2.1 RELEASED — HIGH CONVERSION B2B ENGINE</span>
+    <h1>Turn Targeted Telegram Channels Into Paying US B2B Clients</h1>
+    <p class="lead">Stop blasting cold DMs into the void. Extract real decision makers who are active right now, qualify them automatically, and scale your pipeline on Solana rails.</p>
+    
+    <div class="terminal">
+      $ python3 tg_harvester.py --group @saas_founders_us --filter-active-24h<br>
+      [✓] Connecting session... Connected.<br>
+      [✓] Group identified: 4,820 members.<br>
+      [✓] Filtering bots, lurkers & inactive accounts...<br>
+      [★] Extracted 312 active founders & CTOs (posted in last 24h)<br>
+      [★] Exported to: leads_saas_founders_verified.csv
+    </div>
+
+    <div class="pricing-grid">
+      <div class="card featured">
+        <div>
+          <h3>TG-Lead Harvester Pro</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Stand-alone scraping & filtering engine.</p>
+          <div class="price">$19.99 <span>/ one-time</span></div>
+          <ul class="features">
+            <li>Zero-ban Telegram session handler</li>
+            <li>Last-seen & 24h activity filter</li>
+            <li>Clean CSV/JSON export ready for CRM</li>
+            <li>Lifetime software updates</li>
+          </ul>
+        </div>
+        <button class="btn" onclick="copyWallet()">Instant Pay with SOL ($19.99)</button>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>500 Verified US Leads</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Done-for-you curated prospect list.</p>
+          <div class="price">$39.00 <span>/ pack</span></div>
+          <ul class="features">
+            <li>500 verified active US founders</li>
+            <li>Direct Telegram handle + Twitter profile</li>
+            <li>Activity score & niche categorization</li>
+            <li>Instant direct download</li>
+          </ul>
+        </div>
+        <button class="btn" onclick="copyWallet()">Instant Pay with SOL ($39.00)</button>
+      </div>
+    </div>
+
+    <div class="wallet-box">
+      <h4>⚡ Instant Checkout via Solana (Phantom Wallet)</h4>
+      <p style="font-size: 13px; color: var(--text-muted);">Send the SOL equivalent to the verified deployment wallet below and DM <b>@Dankokor1455</b> for instant delivery:</p>
+      <div class="wallet-address" id="sol-wallet">3EZnNP2kfmY161XyqnRWEFgtYw6jWFXHnimU5RMqA8g8</div>
+      <button class="btn" style="max-width: 200px; margin: 0 auto; padding: 8px 16px; font-size: 13px;" onclick="copyWallet()">Copy SOL Address</button>
+    </div>
+  </div>
+
+  <script>
+    function copyWallet() {
+      const addr = document.getElementById('sol-wallet').innerText;
+      navigator.clipboard.writeText(addr).then(() => {
+        alert("Wallet address copied! Send payment via Phantom and contact @Dankokor1455 for download access.");
+      });
+    }
+  </script>
+</body>
+</html>
