@@ -99,5 +99,74 @@
       });
     }
   </script>
+
+  <!-- Step-by-Step & Video Demo Section -->
+  <section class="max-w-4xl mx-auto px-6 py-10 border-t border-gray-900">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-extrabold text-white mb-3">How It Works in 3 Simple Steps</h2>
+      <p class="text-gray-400 text-sm max-w-xl mx-auto">No complex installations. Run locally in 60 seconds with 100% privacy and zero monthly fees.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6 mb-12">
+      <div class="bg-gray-950 border border-gray-800 p-6 rounded-2xl relative">
+        <div class="text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">Step 01</div>
+        <h4 class="text-lg font-bold text-white mb-2">Deploy Script</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Clone repo, add your Telegram API ID & Hash, and run <code class="text-emerald-400 bg-gray-900 px-1 py-0.5 rounded">python harvester.py</code>.</p>
+      </div>
+      <div class="bg-gray-950 border border-gray-800 p-6 rounded-2xl relative">
+        <div class="text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">Step 02</div>
+        <h4 class="text-lg font-bold text-white mb-2">Ghost Extraction</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">The engine silently listens to active chat packets, bypassing hidden member lists with zero account bans.</p>
+      </div>
+      <div class="bg-gray-950 border border-gray-800 p-6 rounded-2xl relative">
+        <div class="text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">Step 03</div>
+        <h4 class="text-lg font-bold text-white mb-2">Export & Convert</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Export clean CSV of active founders with recent message snippets and personalized 1-line pitches.</p>
+      </div>
+    </div>
+
+    <!-- Live Terminal / Video Simulation -->
+    <div class="bg-black border border-emerald-500/30 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+      <div class="flex items-center justify-between border-b border-gray-800 pb-3 mb-4">
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+          <span class="text-gray-500 text-xs font-mono ml-2">DEMO VIDEO RUNNER: ghost_engine.py</span>
+        </div>
+        <span class="text-emerald-400 text-xs font-mono animate-pulse">● LIVE STREAMING</span>
+      </div>
+      <div class="font-mono text-xs text-gray-300 space-y-1.5">
+        <p class="text-emerald-400">user@server:~$ python3 ghost_engine.py --target @SolanaBuildersChat --limit 1000</p>
+        <p class="text-gray-500">[INFO] Connected to Telegram MTProto session (FANILIKSID)</p>
+        <p class="text-yellow-400">[SECURITY] Target group has "Hide Members" enabled. Switching to Ghost-Stream mode...</p>
+        <p class="text-gray-400">[SCAN] Reading message packets in real-time...</p>
+        <p class="text-emerald-300">[FOUND] @alex_sol (Founder, DexFlow) - Active 4m ago | Snippet: "Need fast liquidity"</p>
+        <p class="text-emerald-300">[FOUND] @mike_dev (Lead Engineer, PaySaaS) - Active 12m ago | Snippet: "Building on Solana"</p>
+        <p class="text-emerald-400 font-bold">[SUCCESS] 240 high-intent founders extracted to leads.csv in 18 seconds (0 bans) ⚡</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instant Delivery & Direct Contact Guarantee Box -->
+  <section class="max-w-xl mx-auto px-6 py-6 text-center">
+    <div class="bg-gradient-to-r from-emerald-950/40 via-gray-900 to-emerald-950/40 border border-emerald-500/40 p-6 rounded-2xl shadow-xl">
+      <h3 class="text-lg font-bold text-white mb-2">⚡ Instant Delivery & 24/7 Direct Contact</h3>
+      <p class="text-gray-300 text-xs mb-4 leading-relaxed">
+        After sending SOL/USDC, your license key & source code are delivered instantly. <br/>
+        Got questions or need custom setup? Connect directly with the founder:
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="https://t.me/FANILIKSID" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-lg flex items-center gap-2">
+          <span>✈️</span> Chat on Telegram (@FANILIKSID)
+        </a>
+        <a href="https://x.com/Dankokor1455" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold text-xs px-5 py-2.5 rounded-xl transition-all border border-gray-700">
+          <span>🐦</span> DM on X (@Dankokor1455)
+        </a>
+      </div>
+      <p class="text-[11px] text-gray-500 mt-3">Average response time: &lt; 5 minutes.</p>
+    </div>
+  </section>
+
 </body>
 </html>
