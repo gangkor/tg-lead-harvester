@@ -3,170 +3,367 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TG-Lead Harvester Pro | Turn Telegram Into Your #1 B2B Pipeline</title>
+  <title>TG-Lead Harvester Pro — High-Speed Ban-Proof Telegram Lead Scraper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #090a0f;
-      --card-bg: #12151f;
-      --border: #222938;
-      --accent: #9945ff;
-      --accent-alt: #14f195;
-      --text: #e2e8f0;
-      --text-muted: #94a3b8;
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --card-border: #1f2937;
+      --accent: #10b981;
+      --accent-hover: #059669;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
-    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-    .badge { display: inline-block; background: rgba(153, 69, 255, 0.15); color: var(--accent-alt); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
-    h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; background: linear-gradient(135deg, #fff 0%, var(--accent-alt) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    p.lead { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 30px; }
-    .terminal { background: #000; border: 1px solid var(--border); border-radius: 12px; padding: 20px; font-family: "Courier New", Courier, monospace; font-size: 14px; color: #14f195; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 40px; }
-    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
-    .card.featured { border-color: var(--accent); box-shadow: 0 0 25px rgba(153, 69, 255, 0.2); }
-    .card h3 { font-size: 1.4rem; margin-bottom: 10px; }
-    .price { font-size: 2.5rem; font-weight: 800; margin-bottom: 20px; color: #fff; }
-    .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
-    ul.features { list-style: none; margin-bottom: 25px; }
-    ul.features li { margin-bottom: 12px; color: var(--text-muted); display: flex; align-items: center; }
-    ul.features li::before { content: "✓"; color: var(--accent-alt); font-weight: bold; margin-right: 10px; }
-    .btn { display: block; text-align: center; background: linear-gradient(135deg, var(--accent) 0%, #7928ca 100%); color: #fff; text-decoration: none; padding: 14px; border-radius: 10px; font-weight: 700; cursor: pointer; border: none; transition: 0.2s; }
-    .btn:hover { opacity: 0.9; transform: translateY(-2px); }
-    .wallet-box { background: #12151f; border: 1px dashed var(--accent); border-radius: 12px; padding: 20px; text-align: center; margin-top: 30px; }
-    .wallet-address { font-family: monospace; background: #000; padding: 10px; border-radius: 6px; word-break: break-all; margin: 10px 0; color: var(--accent-alt); font-size: 13px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    header { text-align: center; margin-bottom: 44px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+    }
+    .problem-box {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+    .problem-title {
+      color: #f87171;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .solution-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+    .solution-title {
+      color: #34d399;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 640px) {
+      .feature-list { grid-template-columns: 1fr; }
+      h1 { font-size: 27px; }
+    }
+    .feature-item {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+    }
+    .feature-icon {
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .terminal {
+      background: #030712;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 18px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      margin-top: 24px;
+      overflow-x: auto;
+    }
+    .terminal-header {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #1f2937;
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+    .t-cmd { color: #f3f4f6; }
+    .t-dim { color: #6b7280; }
+    .t-accent { color: var(--accent); }
+    .t-yellow { color: #fcd34d; }
+    .pricing-hero {
+      background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+      border: 2px solid var(--accent);
+      border-radius: 20px;
+      padding: 36px 24px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .price-tag {
+      font-size: 46px;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 10px 0 4px;
+    }
+    .price-sub {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .wallet-container {
+      background: #030712;
+      border: 1px solid #374151;
+      border-radius: 12px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      max-width: 580px;
+      margin: 0 auto 18px;
+    }
+    .wallet-addr {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .copy-btn {
+      background: var(--accent);
+      color: #030712;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover { background: #34d399; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 22px;
+    }
+    @media (max-width: 640px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-tg { background: #2563eb; color: #ffffff; }
+    .btn-tg:hover { background: #1d4ed8; }
+    .btn-x { background: #1f2937; color: #ffffff; border: 1px solid #374151; }
+    .btn-x:hover { background: #374151; }
+    .faq-item {
+      border-bottom: 1px solid #1f2937;
+      padding: 16px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 600; font-size: 15px; margin-bottom: 4px; color: #ffffff; }
+    .faq-a { font-size: 13px; color: var(--text-muted); }
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 12px;
+      margin-top: 36px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <span class="badge">🔥 v2.1 RELEASED — HIGH CONVERSION B2B ENGINE</span>
-    <h1>Turn Targeted Telegram Channels Into Paying US B2B Clients</h1>
-    <p class="lead">Stop blasting cold DMs into the void. Extract real decision makers who are active right now, qualify them automatically, and scale your pipeline on Solana rails.</p>
-    
-    <div class="terminal">
-      $ python3 tg_harvester.py --group @saas_founders_us --filter-active-24h<br>
-      [✓] Connecting session... Connected.<br>
-      [✓] Group identified: 4,820 members.<br>
-      [✓] Filtering bots, lurkers & inactive accounts...<br>
-      [★] Extracted 312 active founders & CTOs (posted in last 24h)<br>
-      [★] Exported to: leads_saas_founders_verified.csv
-    </div>
+    <header>
+      <div class="badge">
+        <span>⚡</span> Clean, High-Speed & 100% Ban-Proof Python Engine
+      </div>
+      <h1>Extract Verified Leads from Telegram <br>Without Account Restrictions</h1>
+      <p class="subtitle">
+        Collect real founders, decision-makers, verified @usernames and bios from active Telegram groups — export clean CSV ready in 30 seconds.
+      </p>
+    </header>
 
-    <div class="pricing-grid">
-      <div class="card featured">
-        <div>
-          <h3>TG-Lead Harvester Pro</h3>
-          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Stand-alone scraping & filtering engine.</p>
-          <div class="price">$19.99 <span>/ one-time</span></div>
-          <ul class="features">
-            <li>Zero-ban Telegram session handler</li>
-            <li>Last-seen & 24h activity filter</li>
-            <li>Clean CSV/JSON export ready for CRM</li>
-            <li>Lifetime software updates</li>
-          </ul>
-        </div>
-        <button class="btn" onclick="copyWallet()">Instant Pay with SOL ($19.99)</button>
+    <div class="card">
+      <div class="problem-box">
+        <div class="problem-title">❌ Why traditional scrapers fail and burn accounts:</div>
+        <p style="font-size: 13px; color: #cbd5e1;">
+          Older tools brute-force Telegram's <code>GetParticipants</code> directory. Telegram detects mass enumeration, triggers permanent FloodWait bans within 24–48 hours, and fails completely when groups enable "Hide Members".
+        </p>
       </div>
 
-      <div class="card">
-        <div>
-          <h3>500 Verified US Leads</h3>
-          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Done-for-you curated prospect list.</p>
-          <div class="price">$39.00 <span>/ pack</span></div>
-          <ul class="features">
-            <li>500 verified active US founders</li>
-            <li>Direct Telegram handle + Twitter profile</li>
-            <li>Activity score & niche categorization</li>
-            <li>Instant direct download</li>
-          </ul>
+      <div class="solution-box">
+        <div class="solution-title">✅ How TG-Lead Harvester Pro solves this:</div>
+        <p style="font-size: 13px; color: #cbd5e1;">
+          Our engine passively reads live community message streams. It extracts only active members who actually posted recently, bypassing hidden member lists with zero account ban risk.
+        </p>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>100% Ban-Proof:</strong> Operates under safe MTProto rate-limits with randomized delays.</div>
         </div>
-        <button class="btn" onclick="copyWallet()">Instant Pay with SOL ($39.00)</button>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>Bypasses "Hide Members":</strong> Captures active chatters from the message flow.</div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>Instant CSV Export:</strong> Exports @username, First Name, Bio, and Activity Status.</div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>Runs Locally:</strong> Built on pure Python. Works on Windows, Mac, Linux, and Android (Termux).</div>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-header">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+          <span style="color:#6b7280; font-size:11px; margin-left:8px;">bash — live demo</span>
+        </div>
+        <p class="t-cmd"><span style="color:#10b981;">$</span> python3 harvester.py --target @SolanaFoundersGroup</p>
+        <p class="t-dim">[1/3] Initializing safe MTProto session stream...</p>
+        <p class="t-yellow">[2/3] Hidden member list detected. Activating message history parser...</p>
+        <p class="t-accent">[+] Found @alex_build (Web3 Founder) — active 8m ago</p>
+        <p class="t-accent">[+] Found @sarah_growth (Head of Growth) — active 21m ago</p>
+        <p class="t-cmd" style="font-weight:bold; color:#34d399;">[✓] Exported 340 active contacts to leads.csv (14.2s, 0 bans)</p>
       </div>
     </div>
 
-    <div class="wallet-box">
-      <h4>⚡ Instant Checkout via Solana (Phantom Wallet)</h4>
-      <p style="font-size: 13px; color: var(--text-muted);">Send the SOL equivalent to the verified deployment wallet below and DM <b>@Dankokor1455</b> for instant delivery:</p>
-      <div class="wallet-address" id="sol-wallet">3EZnNP2kfmY161XyqnRWEFgtYw6jWFXHnimU5RMqA8g8</div>
-      <button class="btn" style="max-width: 200px; margin: 0 auto; padding: 8px 16px; font-size: 13px;" onclick="copyWallet()">Copy SOL Address</button>
+    <div class="pricing-hero">
+      <div style="text-transform: uppercase; font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: 0.08em;">
+        Lifetime License • Full Source Code
+      </div>
+      <div class="price-tag">$19.99 <span style="font-size: 16px; font-weight: 400; color: #9ca3af;">/ one-time (SOL / USDC)</span></div>
+      <p class="price-sub">Pay once, own forever. Unlimited scrapes, zero monthly subscriptions, lifetime updates.</p>
+
+      <div class="wallet-container">
+        <span class="wallet-addr" id="walletAddr">3EZnNP2kfmY161XyqnRWEFgtYw6jWFXHnimU5RMqA8g8</span>
+        <button class="copy-btn" onclick="copyWallet()">Copy Address</button>
+      </div>
+
+      <p style="font-size: 13px; color: #9ca3af; max-width: 500px; margin: 0 auto;">
+        Send <strong>$19.99 in SOL or USDC</strong> to the address above. Send your transaction hash to the founder below for immediate delivery of script files & setup guide.
+      </p>
+
+      <div class="contact-grid">
+        <a href="https://t.me/FANILIKSID" target="_blank" class="btn-contact btn-tg">
+          <span>✈️</span> Message Founder on Telegram (@FANILIKSID)
+        </a>
+        <a href="https://x.com/Dankokor1455" target="_blank" class="btn-contact btn-x">
+          <span>🐦</span> Message on X / Twitter (@Dankokor1455)
+        </a>
+      </div>
+      <div style="font-size: 12px; color: #6b7280; margin-top: 14px;">
+        🔒 Direct developer contact. Fast response & guidance with initial setup.
+      </div>
     </div>
+
+    <div class="card">
+      <h2 style="font-size: 18px; font-weight: 700; margin-bottom: 14px;"><span>❓</span> Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-q">Do I need Telegram Premium or expensive servers?</div>
+        <div class="faq-a">No. TG-Lead Harvester runs on standard Python using free official Telegram API credentials (from my.telegram.org). You can run it on your own laptop.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is my Telegram account safe from bans?</div>
+        <div class="faq-a">Yes. Unlike bulk scrapers that spam server requests, this tool passively reads messages like a human user, including randomized delay intervals to avoid rate limits.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">How do I receive the product after payment?</div>
+        <div class="faq-a">Message your transaction hash to @FANILIKSID on Telegram or @Dankokor1455 on X. You will instantly receive the download link and private documentation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can you scrape groups for me if I prefer ready-to-use lists?</div>
+        <div class="faq-a">Yes! We also provide pre-verified B2B lead packs (500 active founders for $39). Message @FANILIKSID to order a custom niche dataset.</div>
+      </div>
+    </div>
+
+    <footer>
+      TG-Lead Harvester Pro © 2026 • Professional Growth Tools for Builders.
+    </footer>
   </div>
 
   <script>
     function copyWallet() {
-      const addr = document.getElementById('sol-wallet').innerText;
-      navigator.clipboard.writeText(addr).then(() => {
-        alert("Wallet address copied! Send payment via Phantom and contact @Dankokor1455 for download access.");
-      });
+      const addr = document.getElementById("walletAddr").innerText;
+      navigator.clipboard.writeText(addr);
+      const btn = document.querySelector(".copy-btn");
+      btn.innerText = "Copied! ✓";
+      btn.style.background = "#ffffff";
+      btn.style.color = "#000000";
+      setTimeout(() => {
+        btn.innerText = "Copy Address";
+        btn.style.background = "";
+        btn.style.color = "";
+      }, 2000);
     }
   </script>
-
-  <!-- Step-by-Step & Video Demo Section -->
-  <section class="max-w-4xl mx-auto px-6 py-10 border-t border-gray-900">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl font-extrabold text-white mb-3">How It Works in 3 Simple Steps</h2>
-      <p class="text-gray-400 text-sm max-w-xl mx-auto">No complex installations. Run locally in 60 seconds with 100% privacy and zero monthly fees.</p>
-    </div>
-
-    <div class="grid sm:grid-cols-3 gap-6 mb-12">
-      <div class="bg-gray-950 border border-gray-800 p-6 rounded-2xl relative">
-        <div class="text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">Step 01</div>
-        <h4 class="text-lg font-bold text-white mb-2">Deploy Script</h4>
-        <p class="text-gray-400 text-xs leading-relaxed">Clone repo, add your Telegram API ID & Hash, and run <code class="text-emerald-400 bg-gray-900 px-1 py-0.5 rounded">python harvester.py</code>.</p>
-      </div>
-      <div class="bg-gray-950 border border-gray-800 p-6 rounded-2xl relative">
-        <div class="text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">Step 02</div>
-        <h4 class="text-lg font-bold text-white mb-2">Ghost Extraction</h4>
-        <p class="text-gray-400 text-xs leading-relaxed">The engine silently listens to active chat packets, bypassing hidden member lists with zero account bans.</p>
-      </div>
-      <div class="bg-gray-950 border border-gray-800 p-6 rounded-2xl relative">
-        <div class="text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">Step 03</div>
-        <h4 class="text-lg font-bold text-white mb-2">Export & Convert</h4>
-        <p class="text-gray-400 text-xs leading-relaxed">Export clean CSV of active founders with recent message snippets and personalized 1-line pitches.</p>
-      </div>
-    </div>
-
-    <!-- Live Terminal / Video Simulation -->
-    <div class="bg-black border border-emerald-500/30 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
-      <div class="flex items-center justify-between border-b border-gray-800 pb-3 mb-4">
-        <div class="flex items-center gap-2">
-          <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-          <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-          <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-          <span class="text-gray-500 text-xs font-mono ml-2">DEMO VIDEO RUNNER: ghost_engine.py</span>
-        </div>
-        <span class="text-emerald-400 text-xs font-mono animate-pulse">● LIVE STREAMING</span>
-      </div>
-      <div class="font-mono text-xs text-gray-300 space-y-1.5">
-        <p class="text-emerald-400">user@server:~$ python3 ghost_engine.py --target @SolanaBuildersChat --limit 1000</p>
-        <p class="text-gray-500">[INFO] Connected to Telegram MTProto session (FANILIKSID)</p>
-        <p class="text-yellow-400">[SECURITY] Target group has "Hide Members" enabled. Switching to Ghost-Stream mode...</p>
-        <p class="text-gray-400">[SCAN] Reading message packets in real-time...</p>
-        <p class="text-emerald-300">[FOUND] @alex_sol (Founder, DexFlow) - Active 4m ago | Snippet: "Need fast liquidity"</p>
-        <p class="text-emerald-300">[FOUND] @mike_dev (Lead Engineer, PaySaaS) - Active 12m ago | Snippet: "Building on Solana"</p>
-        <p class="text-emerald-400 font-bold">[SUCCESS] 240 high-intent founders extracted to leads.csv in 18 seconds (0 bans) ⚡</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Instant Delivery & Direct Contact Guarantee Box -->
-  <section class="max-w-xl mx-auto px-6 py-6 text-center">
-    <div class="bg-gradient-to-r from-emerald-950/40 via-gray-900 to-emerald-950/40 border border-emerald-500/40 p-6 rounded-2xl shadow-xl">
-      <h3 class="text-lg font-bold text-white mb-2">⚡ Instant Delivery & 24/7 Direct Contact</h3>
-      <p class="text-gray-300 text-xs mb-4 leading-relaxed">
-        After sending SOL/USDC, your license key & source code are delivered instantly. <br/>
-        Got questions or need custom setup? Connect directly with the founder:
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a href="https://t.me/FANILIKSID" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-lg flex items-center gap-2">
-          <span>✈️</span> Chat on Telegram (@FANILIKSID)
-        </a>
-        <a href="https://x.com/Dankokor1455" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-semibold text-xs px-5 py-2.5 rounded-xl transition-all border border-gray-700">
-          <span>🐦</span> DM on X (@Dankokor1455)
-        </a>
-      </div>
-      <p class="text-[11px] text-gray-500 mt-3">Average response time: &lt; 5 minutes.</p>
-    </div>
-  </section>
-
 </body>
 </html>
